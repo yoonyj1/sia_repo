@@ -12,7 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-@WebMvcTest(HomeController.class) // HomeController의 웹페이지 테스트, 스프링 MVC애플리케이션 형태로 테스트가 실행되도록 한다.
+//@WebMvcTest(HomeController.class) // HomeController의 웹페이지 테스트, 스프링 MVC애플리케이션 형태로 테스트가 실행되도록 한다. -> WebConfig.java가 HomeController를 대체하기 때문에 해당 코드는 아래 줄의 코드로 대체
+@WebMvcTest
 class HomeControllerTest {
 
 	@Autowired
